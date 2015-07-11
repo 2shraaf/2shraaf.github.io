@@ -1,0 +1,16 @@
+# Site settings
+title: Ahmed Ashraf
+email: ahmed.awwad.me@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  2nd year Computer science and engineering student.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://yourdomain.com" # the base hostname & protocol for your site
+# Build settings
+markdown: kramdown
+twitter_account: 2shraaf
+github_account:  2shraaf
+linkedin_account: 2shraaf
+email: ahmed.awwad.me@gmail.com
+facebook_account: 2shraaf
+stackoverflow_id: 3670091
+
