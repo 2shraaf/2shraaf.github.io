@@ -10,4 +10,4 @@ I want to keep my brain busy , test my creativity rate , involve in many challen
 </p>
 
 
-If you have jop for me this my <a href="assets/cv.pdf">CV</a>
+If you have jop for me this my <a href="../assets/cv.pdf">CV</a>
