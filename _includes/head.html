@@ -1,240 +1,58 @@
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-
-  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
-  <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
-  <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-  <style type="text/css" id="gwd-text-style">p {
-    margin: 0px;
-}
-h1 {
-    margin: 0px;
-}
-h2 {
-    margin: 0px;
-}
-h3 {
-    margin: 0px;
-}</style>
-  <style type="text/css">html,
-body {
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-}
-body {
-    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
-    -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
-    -moz-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
-    perspective: 1400px;
-    -webkit-perspective: 1400px;
-    -moz-perspective: 1400px;
-    transform-style: preserve-3d;
-    -webkit-transform-style: preserve-3d;
-    -moz-transform-style: preserve-3d;
-    background-color: transparent;
-}
-.gwd-img-1x6o {
-    position: absolute;
-    width: 128px;
-    height: 128px;
-    left: 306px;
-    top: 83px;
-    transform-style: preserve-3d;
-    -webkit-transform-style: preserve-3d;
-    -moz-transform-style: preserve-3d;
-    background-image: none;
-}
-.gwd-img-1tu6 {
-    position: absolute;
-    width: 128px;
-    height: 87px;
-    left: 603px;
-    top: 122px;
-}
-.gwd-img-1hxc {
-    position: absolute;
-    width: 128px;
-    height: 128px;
-    left: 474px;
-    top: 148px;
-}
-.gwd-img-1n7z {
-    position: absolute;
-    width: 128px;
-    height: 128px;
-    left: 914px;
-    top: 83px;
-}
-.gwd-img-pqdf {
-    left: 760px;
-    top: 81px;
-}
-.gwd-img-17tp {
-    left: 457px;
-    top: 81px;
-}
-.gwd-canvas-1w25 {
-    position: absolute;
-    width: 303px;
-    height: 273px;
-    transform-style: preserve-3d;
-    -webkit-transform-style: preserve-3d;
-    -moz-transform-style: preserve-3d;
-    left: 521px;
-    top: 236px;
-}
-.gwd-canvas-9kn1 {
-    position: absolute;
-    width: 5.5px;
-    height: 79.5px;
-    left: 663px;
-    top: 207px;
-    transform-style: preserve-3d;
-    -webkit-transform-style: preserve-3d;
-    -moz-transform-style: preserve-3d;
-    z-index: -1;
-}
-.gwd-canvas-13kf {
-    position: absolute;
-    width: 164px;
-    height: 174px;
-    left: 357.5px;
-    top: 196.5px;
-    transform-style: preserve-3d;
-    -webkit-transform-style: preserve-3d;
-    -moz-transform-style: preserve-3d;
-    z-index: -1;
-}
-.gwd-canvas-bp2w {
-    position: absolute;
-    width: 160px;
-    height: 182px;
-    left: 821.5px;
-    top: 190.5px;
-    transform-style: preserve-3d;
-    -webkit-transform-style: preserve-3d;
-    -moz-transform-style: preserve-3d;
-    z-index: -1;
-}
-.gwd-p-11l5 {
-    position: absolute;
-    width: 166px;
-    height: 49px;
-    left: 595px;
-    top: 272px;
-    color: rgb(0, 151, 85);
-    text-align: center;
-    font-size: 35px;
-    text-shadow: rgb(131, 95, 0) 1px 1px;
-    font-family: Oswald;
-    transform: translate3d(-5px, -19px, 0px);
-    -webkit-transform: translate3d(-5px, -19px, 0px);
-    -moz-transform: translate3d(-5px, -19px, 0px);
-    transform-style: preserve-3d;
-    -webkit-transform-style: preserve-3d;
-    -moz-transform-style: preserve-3d;
-    background-image: none;
-}
-.gwd-img-12us {
-    position: absolute;
-    top: 60px;
-    left: 200px;
-    width: 128px;
-    height: 128px;
-    transform: translate3d(410px, 261px, 0px);
-    -webkit-transform: translate3d(410px, 261px, 0px);
-    -moz-transform: translate3d(410px, 261px, 0px);
-    transform-style: preserve-3d;
-    -webkit-transform-style: preserve-3d;
-    -moz-transform-style: preserve-3d;
-}
-.gwd-p-evb7 {
-    position: absolute;
-    color: rgb(0, 0, 0);
-    text-align: center;
-    text-shadow: rgb(131, 95, 0) 1px 1px;
-    font-size: 50px;
-    font-weight: bold;
-    font-family: Lobster;
-    transform-style: preserve-3d;
-    -webkit-transform-style: preserve-3d;
-    -moz-transform-style: preserve-3d;
-    width: 249px;
-    height: 231px;
-    transform-origin: -227px -61.25px 0px;
-    -webkit-transform-origin: -227px -61.25px 0px;
-    -moz-transform-origin: -227px -61.25px 0px;
-    display: none;
-    left: 549px;
-    top: 245px;
-}
-.gwd-span-7zo3 {
-    font-size: 20px;
-}
-.gwd-span-15vx {
-    color: rgb(0, 151, 85);
-}
-.gwd-span-1d3x {
-    font-size: 30px;
-}
-.gwd-span-1l01 {
-    color: rgb(0, 151, 85);
-}
-.gwd-span-g44m {
-    font-family: Oswald;
-    font-size: 20px;
-}
-.gwd-span-1sfk {
-    color: rgb(0, 151, 85);
-}
-.gwd-span-eycq {
-    font-family: Oswald;
-}
-.gwd-span-1e7n {
-    font-family: 'Indie Flower';
-}
-.gwd-span-aqvx {
-    font-family: 'Indie Flower';
-}
-.gwd-span-1c7q {
-    position: absolute;
-    width: 217.893px;
-    height: 235.422px;
-    left: 568px;
-    top: 273px;
-    font-family: 'Indie Flower';
-    font-size: 30px;
-    font-weight: bold;
-    text-align: center;
-    color: rgb(0, 151, 85);
-    text-shadow: rgb(131, 95, 0) 1px 1px;
-    display: none;
-}
-.gwd-span-xs49 {
-    font-family: Oswald;
-}
-.gwd-span-go6y {
-    font-size: 15px;
-}
-.gwd-span-mlbp {
-    color: rgb(238, 238, 238);
-}</style>
-
-  <link href="https://fonts.googleapis.com/css?family=Lato|Mr+Dafoe|Oswald|Indie+Flower|Lobster" rel="stylesheet" type="text/css">
-  <script data-source="googbase_min.js" data-version="3" data-exports-type="googbase" type="text/javascript" src="/assets/js/googbase_min.js"></script>
-  <script data-source="gwd_webcomponents_min.js" data-version="4" data-exports-type="gwd_webcomponents" type="text/javascript" src="/assets/js/gwd_webcomponents_min.js"></script>
-  <script data-source="gwdoval_min.js" data-version="3" data-exports-type="gwd-oval" type="text/javascript" src="/assets/js/gwdoval_min.js"></script>
-  <script data-source="gwdbezierpath_min.js" data-version="3" data-exports-type="gwd-bezierpath" type="text/javascript" src="/assets/js/gwdbezierpath_min.js"></script>
-  <script type="text/javascript" gwd-events="support" src="/assets/js/gwd-events-support.1.0.js"></script>
-  <script type="text/javascript" gwd-events="handlers">gwd.auto_CoffeMouseover=function(event){gwd.actions.events.setInlineStyle("project-img","display: none; ")};gwd.auto_CoffeMouseout=function(event){gwd.actions.events.setInlineStyle("project-img","display: block; ")};gwd.auto_CoffeMouseover1=function(event){gwd.actions.events.setInlineStyle("projects","display: none; ")};gwd.auto_CoffeMouseout1=function(event){gwd.actions.events.setInlineStyle("projects","display: block; ")};gwd.auto_CoffeMouseover2=function(event){gwd.actions.events.setInlineStyle("coffeep","display: block; ")};gwd.auto_CoffeMousemove=function(event){gwd.actions.events.setInlineStyle("coffeep","display: none; ")};gwd.auto_LaptopMouseover=function(event){gwd.actions.events.setInlineStyle("projects","display: none; ")};gwd.auto_LaptopMouseover1=function(event){gwd.actions.events.setInlineStyle("project-img","display: none; ")};gwd.auto_LaptopMousemove=function(event){gwd.actions.events.setInlineStyle("laptopp","display: block; ")};gwd.auto_LaptopMouseout=function(event){gwd.actions.events.setInlineStyle("laptopp","display: none; ")};gwd.auto_LaptopMouseout1=function(event){gwd.actions.events.setInlineStyle("project-img","display: block; ")};gwd.auto_LaptopMouseout2=function(event){gwd.actions.events.setInlineStyle("projects","display: block; ")}</script>
-  <script type="text/javascript" gwd-events="registration">gwd.actions.events.registerEventHandlers=function(event){gwd.actions.events.addHandler("coffe","mouseover",gwd.auto_CoffeMouseover,false);gwd.actions.events.addHandler("coffe","mouseout",gwd.auto_CoffeMouseout,false);gwd.actions.events.addHandler("coffe","mouseover",gwd.auto_CoffeMouseover1,false);gwd.actions.events.addHandler("coffe","mouseout",gwd.auto_CoffeMouseout1,false);gwd.actions.events.addHandler("coffe","mouseover",gwd.auto_CoffeMouseover2,false);gwd.actions.events.addHandler("coffe","mouseout",gwd.auto_CoffeMousemove,false);gwd.actions.events.addHandler("laptop","mouseover",gwd.auto_LaptopMouseover,false);gwd.actions.events.addHandler("laptop","mouseover",gwd.auto_LaptopMouseover1,false);gwd.actions.events.addHandler("laptop","mouseover",gwd.auto_LaptopMousemove,false);gwd.actions.events.addHandler("laptop","mouseout",gwd.auto_LaptopMouseout,false);gwd.actions.events.addHandler("laptop","mouseout",gwd.auto_LaptopMouseout1,false);gwd.actions.events.addHandler("laptop","mouseout",gwd.auto_LaptopMouseout2,false)};gwd.actions.events.deregisterEventHandlers=function(event){gwd.actions.events.removeHandler("coffe","mouseover",gwd.auto_CoffeMouseover,false);gwd.actions.events.removeHandler("coffe","mouseout",gwd.auto_CoffeMouseout,false);gwd.actions.events.removeHandler("coffe","mouseover",gwd.auto_CoffeMouseover1,false);gwd.actions.events.removeHandler("coffe","mouseout",gwd.auto_CoffeMouseout1,false);gwd.actions.events.removeHandler("coffe","mouseover",gwd.auto_CoffeMouseover2,false);gwd.actions.events.removeHandler("coffe","mouseout",gwd.auto_CoffeMousemove,false);gwd.actions.events.removeHandler("laptop","mouseover",gwd.auto_LaptopMouseover,false);gwd.actions.events.removeHandler("laptop","mouseover",gwd.auto_LaptopMouseover1,false);gwd.actions.events.removeHandler("laptop","mouseover",gwd.auto_LaptopMousemove,false);gwd.actions.events.removeHandler("laptop","mouseout",gwd.auto_LaptopMouseout,false);gwd.actions.events.removeHandler("laptop","mouseout",gwd.auto_LaptopMouseout1,false);gwd.actions.events.removeHandler("laptop","mouseout",gwd.auto_LaptopMouseout2,false)};document.addEventListener("DOMContentLoaded",gwd.actions.events.registerEventHandlers);document.addEventListener("unload",gwd.actions.events.deregisterEventHandlers)</script>
-
-</head>
+    <meta charset="UTF-8">
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+    <meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1">
+    <title>{% if page.title %}{{ page.title }} &#8211; {% endif %}{{ site.title }}</title>
+    <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+    {% if page.tags %}<meta name="keywords" content="{{ page.tags | join: ', ' }}">{% endif %}
+    <!-- Twitter Cards -->
+    {% if page.feature %}{% capture feature %}{{ page.feature }}{% endcapture %}{% unless feature contains 'http://' or feature contains 'https://' %}{% capture feature %}{{ site.url }}/{{ feature }}{% endcapture %}{% endunless %}
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="{{ feature }}">
+    {% else %}<meta name="twitter:card" content="summary">
+    <meta name="twitter:image" content="{{ site.url }}/{{ site.logo }}">{% endif %}
+    <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+    {% if page.excerpt %}<meta name="twitter:description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
+    {% if site.twitter %}<meta name="twitter:site" content="@{{ site.twitter }}">
+    <meta name="twitter:creator" content="@{{ site.twitter }}">{% endif %}
+    <!-- Open Graph -->
+    <meta property="og:locale" content="{{ site.locale }}">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+    {% if page.excerpt %}<meta property="og:description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
+    <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.url }}">
+    <meta property="og:site_name" content="{{ site.title }}">
+    <meta property="og:image" content="{{ site.url }}/{{ site.logo }}">
+    {% if site.google.verify %}
+    <!-- Webmaster Tools verfication -->
+    <meta name="google-site-verification" content="{{ site.google.verify }}">{% endif %}
+    {% if site.bing-verify %}    <meta name="msvalidate.01" content="{{ site.bing-verify }}">{% endif %}
+    {% capture canonical %}{{ site.url }}{% if site.permalink contains '.html' %}{{ page.url }}{% else %}{{ page.url | remove:'index.html' | strip_slash }}{% endif %}{% endcapture %}
+    <link rel="canonical" href="{{ canonical }}">
+    <link href="{{ site.url }}/feed.xml" type="application/atom+xml" rel="alternate" title="{{ site.title }} Feed">
+    <!-- Handheld -->
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="{{ site.url }}/assets/css/main.css">
+    <!-- JS -->
+    <script src="{{ site.url }}/assets/js/modernizr-3.3.1.custom.min.js"></script>
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="{{ site.url }}/assets/img/favicons/apple-icon-precomposed.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="{{ site.url }}/assets/img/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="{{ site.url }}/assets/img/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="{{ site.url }}/assets/img/favicons/apple-icon-144x144.png">
+    <link rel="shortcut icon" type="image/png" href="{{ site.url }}/favicon.png" />
+    <link rel="shortcut icon" href="{{ site.url }}/favicon.ico" />
+    <!-- Background Image -->
+    {% if site.background %}
+    {% capture background %}{{ site.background }}{% endcapture %}
+    {% unless background contains 'http://' or background contains 'https://' %}{% capture background %}{{ site.url }}/{{ background }}{% endcapture %}{% endunless %}
+    <style type="text/css">body {background-image:url({{ background }});}</style>
+    {% endif %}
+    <!-- Post Feature Image -->
+    {% if page.feature %}
+    {% capture feature %}{{ page.feature }}{% endcapture %}
+    {% unless feature contains 'http://' or feature contains 'https://' %}{% capture feature %}{{ site.url }}/{{ feature }}{% endcapture %}{% endunless %}
+    <style type="text/css">.feature {background-image:url({{ feature }});}</style>
+    {% endif %}
