@@ -4,7 +4,7 @@ bio:                'I want to keep my brain busy , test my creativity rate , in
 description:        "Personal website"
 reading_time:       true
 words_per_minute:   200
-logo:               'assets/logo.png'
+logo:               'assets/img/logo.png'
 background:         'assets/img/placeholder-big.jpg'
 locale:             en_US
 url:                http://2shraaf.github.io/
