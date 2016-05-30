@@ -1,13 +1,13 @@
 # Site
 title:              Ahmed Ashraf
-bio:                'I want to keep my brain busy , test my creativity rate , involve in many challenges and keep learning !'
-description:        "Personal website"
+bio:                'I am Ahmed Ashraf Awwad, studying Computer science and engineering in the German University in cairo.'
+description:        "You got a job for me ?"
 reading_time:       true
 words_per_minute:   200
-logo:               'assets/img/logo.png'
+logo:               'assets/img/logo2.jpg'
 background:         'assets/img/placeholder-big.jpg'
 locale:             en_US
-url:                http://2shraaf.github.io/
+url:                http://2shraaf.github.io
 
 # Jekyll
 permalink:          /:title/
@@ -36,7 +36,7 @@ disqus_shortname:   taylantatli
   #ad-client:
   #ad-slot:
 #bing-verify:
-#email:
+email:              ahmed.awwad.me@gmail.com
 twitter:            2shraaf
 #facebook:           username
 github:             2shraaf
@@ -48,7 +48,7 @@ linkedin:           2shraaf
 #tumblr:             username
 #pinterest:         username
 #foursquare:        username
-steam:              username
+#steam:              username
 #dribbble:          username
 #youtube:            username
 #soundcloud:        username
